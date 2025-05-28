@@ -6,7 +6,7 @@ import reactHooksPlugin from "eslint-plugin-react-hooks";
 import tseslint from "typescript-eslint";
 import drizzle from "eslint-plugin-drizzle";
 
-const drizzle = [
+const drizzle_config = [
   {
     plugins: {
       drizzle,
@@ -130,5 +130,5 @@ export default [
   ...eslintConfig,
   ...tsconf,
   ...nextconfig,
-  ...drizzle,
+  ...drizzle_config,
 ];

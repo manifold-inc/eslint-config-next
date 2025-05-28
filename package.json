@@ -1,6 +1,6 @@
 {
   "name": "@manifold-labs/eslint-config-next",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "manifolds nextjs eslint config",
   "repository": {
     "type": "git",
