@@ -4,6 +4,18 @@ import importPlugin from "eslint-plugin-import";
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 import tseslint from "typescript-eslint";
+import drizzle from "eslint-plugin-drizzle";
+
+const drizzle = [
+  {
+    plugins: {
+      drizzle,
+    },
+    rules: {
+      ...drizzle.configs.recommended.rules,
+    },
+  },
+];
 
 const tsconf = tseslint.config({
   name: "custom/tsling/custom",
@@ -113,4 +125,10 @@ const nextconfig = [
     },
   },
 ];
-export default [...ignoresConfig, ...eslintConfig, ...tsconf, ...nextconfig];
+export default [
+  ...ignoresConfig,
+  ...eslintConfig,
+  ...tsconf,
+  ...nextconfig,
+  ...drizzle,
+];

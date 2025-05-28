@@ -1,6 +1,6 @@
 {
-  "name": "@manifold-labs/next-eslint-config",
-  "version": "0.0.1",
+  "name": "@manifold-labs/eslint-config-next",
+  "version": "0.0.3",
   "description": "manifolds nextjs eslint config",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
     "nextjs"
   ],
   "license": "MIT",
-  "main": "eslint.config.ts",
+  "main": "eslint.config.js",
   "devDependencies": {
     "eslint": "^9.27.0",
     "typescript": "^5.8.3",
@@ -21,6 +21,7 @@
     "eslint-plugin-import": "^2.31.0",
     "@next/eslint-plugin-next": "^15.3.2",
     "@typescript-eslint/utils": "^8.33.0",
+    "eslint-plugin-drizzle": "^0.2.3",
     "typescript-eslint": "^8.33.0"
   },
   "peerDependencies": {
